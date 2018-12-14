@@ -22,67 +22,6 @@
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/YTPlayer.css">
 
-
-    </head>
-    <body class="appear-animate">
-
-        <!-- Load Page -->
-        <div class="page-loader">
-            <div class="loader">Loading...</div>
-        </div>
-        <!-- End Loader -->
-
-        <!-- Page Wrap -->
-        <div class="page" id="top">
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0 "/>
-            <!-- End Divider -->
-
-            <!-- Process Section -->
-            <section class="page-section" id="gameplay">
-                <div class="container relative">
-
-                    <!-- Features Grid -->
-                    <div class="row alt-features-grid">
-
-
-            <!-- Divider -->
-            <hr class="mt-0 mb-0"/>
-            <!-- End Divider -->
-
-            <!-- Press Start Section -->
-            <section class="small-section bg-dark">
-                <div class="container relative">
-
-                    <div class="align-center">
-                        <h3 class="banner-heading font-alt">Ready to play?</h3>
-                        <div class="local-scroll">
-                            <a href="portfolio-wide-gutter-3col.html" class="btn btn-mod btn-w btn-medium btn-round">Start</a>
-                        </div>
-                    </div>
-                    <!-- Top Link -->
-                    <div class="local-scroll">
-                        <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-                    </div>
-                    <!-- End Top Link -->
-
-                </div>
-            </section>
-            <!-- Press Start Section End -->
-
-
-
-
-            </footer>
-            <!-- End Foter -->
-
-
-        </div>
-        <!-- End Page Wrap -->
-
-
-
         <!-- JS -->
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -100,6 +39,7 @@
         <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
         <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
         <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/objectives.js"></script>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
         <script type="text/javascript" src="js/gmap3.min.js"></script>
@@ -111,89 +51,113 @@
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
         <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
 
-    </body>
-</html>
+    </head>
 
 
+    <body class="appear-animate">
 
-            <!-- Features Section -->
-            <section class="page-section">
+        <!-- Load Page -->
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Loader -->
+
+        <!-- Page Wrap -->
+        <div class="page" id="top">
+            <!-- Begin Avatar Section -->
+            <section id="gameplay" class="page-section">
                 <div class="container relative">
 
+                    <!-- Player One Select Avatar -->
                     <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Why Choose Us?
+                        Select Avatar
                     </h2>
+                    <div class="mb-20 mb-md-10">
+                        <select id="avatar" onchange="selectAvatar(this);"class="form-control input-sm">
+                          <option value="">Player One</option>
+                            <option value="1">Boy One</option>
+                            <option value="2">Man One</option>
+                            <option value="3">Woman One</option>
+                            <option value="4">Girl One</option>
+                            <option value="5">Woman Two</option>
+                            <option value="6">Burglar</option>
+                        </select>
+                    </div>
 
-                    <!-- Features Grid -->
                     <div class="row multi-columns-row alt-features-grid">
 
-                        <!-- Features Item -->
+                        <!-- Player One Image-->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                             <div class="alt-features-item align-center">
                                 <div class="alt-features-icon">
-                                    <span class="icon-flag"></span>
+                                    <img id="player-one" src="images/avatar-set/png/man-1.png" alt="player one">
                                 </div>
-                                <h3 class="alt-features-title font-alt">Player one</h3>
+                                <h3 class="alt-features-title font-alt">Player One</h3>
                                 <div class="alt-features-descr align-left">
-                                    Lorem ipsum dolor sit amet, c-r adipiscing elit.
-                                    In maximus ligula semper metus pellentesque mattis.
-                                    Maecenas  volutpat, diam enim.
                                 </div>
                             </div>
                         </div>
-                        <!-- End Features Item -->
+                      </div>
 
-                        <!-- Features Item -->
+                      <!-- Player Two Score Counter -->
+                      <div class="mb-20 mb-md-10 align-right">
+                          <input type="number" name="number" id="number" class="input-md form-control" placeholder="Score" max="100">
+                      </div>
+                        <!-- End Player One -->
+
+                    <!-- Player Two Select Avatar -->
+                    <div class="mb-20 mb-md-10">
+                        <select id="avatar" onchange="selectAvatar(this);"class="form-control input-sm">
+                          <option value="">Player Two</option>
+                            <option value="../images/avatar-set-2/png/001-boy.png">Boy One</option>
+                            <option value="../images/avatar-set-2/png/046-man-11.png">Man One</option>
+                            <option value="../images/avatar-set-2/png/047-woman-7.png">Woman One</option>
+                            <option value="../images/avatar-set-2/png/050-woman-8">Girl One</option>
+                            <option value="../images/avatar-set-2/png/043-girl-7">Woman Two</option>
+                            <option value="../images/avatar-set-2/png/032-burglar.png">Burglar</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="row multi-columns-row alt-features-grid">
+
+                        <!-- Player Two Image-->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                             <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-clock"></span>
+                                <div class="alt-features-icon align-left">
+                                    <img id="player-two" src="images/avatar-set/png/man-1.png" alt="">
                                 </div>
-                                <h3 class="alt-features-title font-alt">Player two</h3>
+                                <h3 class="alt-features-title font-alt">Player Two</h3>
                                 <div class="alt-features-descr align-left">
-                                    Proin fringilla augue at maximus vestibulum.
-                                    Nam pulvinar vitae neque et porttitor. Praesent sed
-                                    nisi eleifend, lorem fermentum orci sit amet, iaculis libero.
                                 </div>
                             </div>
                         </div>
-                        <!-- End Features Item -->
 
-                        <!-- Features Item -->
+                        <!-- Player Two Score Counter -->
+                        <div class="mb-20 mb-md-10 align-left">
+                            <input type="number" name="number" id="number" class="input-md form-control" placeholder="Score" max="100">
+                        </div>
+
+                        <!-- Roll Dice-->
                         <div class="col-sm-6 col-md-4 col-lg-4">
                             <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-hotairballoon"></span>
+                                <div class="alt-features-icon align-left">
+                                    <img id="player-two" src="images/die/6.png" alt="">
                                 </div>
-                                <h3 class="alt-features-title font-alt">We have magic</h3>
+                                <h3 class="alt-features-title font-alt">Dice</h3>
                                 <div class="alt-features-descr align-left">
-                                    Curabitur iaculis accumsan augue, nec finibus mauris pretium eu.
-                                    Duis placerat ex gravida nibh tristique porta. Nulla facilisi.
-                                    Suspendisse ultricies eros blandit.
                                 </div>
                             </div>
                         </div>
-                        <!-- End Features Item -->
+                        <!-- Roll Dice-->
 
-                        <!-- Features Item -->
-                        <div class="col-sm-6 col-md-4 col-lg-4">
-                            <div class="alt-features-item align-center">
-                                <div class="alt-features-icon">
-                                    <span class="icon-heart"></span>
-                                </div>
-                                <h3 class="alt-features-title font-alt">We love minimalism</h3>
-                                <div class="alt-features-descr align-left">
-                                    Cras luctus interdum sodales. Quisque quis odio dui. Sedes sit
-                                    amet neque malesuada, lobortis  commodo magna ntesque pharetra
-                                    metus vivera sagittis.
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Features Item -->
 
+                      </div>
+                        <!-- End Player One -->
 
                     </div>
-                    <!-- End Features Grid -->
+                    <!-- End Avatar Grid -->
 
                 </div>
             </section>
@@ -205,50 +169,45 @@
             <hr class="mt-0 mb-0 "/>
             <!-- End Divider -->
 
-            <!-- Call Action Section -->
+            <!-- Objectives Section ------------------------------->
             <section class="small-section bg-dark">
                 <div class="container relative">
 
+                    <!-- Objectives Section -->
+
+                    <!-- Roll Dice Button --->
                     <div class="align-center">
-                        <h3 class="banner-heading font-alt">Want to discuss your new project?</h3>
+                        <h3 class="banner-heading font-alt">CONSOLE</h3>
                         <div>
-                            <a href="" class="btn btn-mod btn-w btn-medium btn-round">Lets tallk</a>
+                            <a id="roll" href="" class="btn btn-mod btn-w btn-medium btn-round">Roll Dice</a>
                         </div>
                     </div>
 
+                    <!-- Hold Button --->
+                    <div class="align-center">
+                        <h3 class="banner-heading font-alt"></h3>
+                        <div>
+                            <a id="roll" href="" class="btn btn-mod btn-w btn-medium btn-round">Hold</a>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Jackpot Button--->
+                    <div class="align-center">
+                        <h3 class="banner-heading font-alt">Jackpot</h3>
+                        <div>
+                            <a id="roll" href="" class="btn btn-mod btn-w btn-medium btn-round">100</a>
+                        </div>
+                    </div>
+                    <!-- End Jackpot Button--->
+
+
                 </div>
             </section>
-            <!-- End Call Action Section -->
+            <!-- End of Objectives Section ------------------------->
 
-
-
-                    <!-- JS -->
-                    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-                    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-                    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-                    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-                    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-                    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-                    <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
-                    <script type="text/javascript" src="js/jquery.countTo.js"></script>
-                    <script type="text/javascript" src="js/jquery.appear.js"></script>
-                    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-                    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-                    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-                    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-                    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-                    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-                    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-
-                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
-                    <script type="text/javascript" src="js/gmap3.min.js"></script>
-                    <script type="text/javascript" src="js/wow.min.js"></script>
-                    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-                    <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-                    <script type="text/javascript" src="js/all.js"></script>
-                    <script type="text/javascript" src="js/contact-form.js"></script>
-                    <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
-                    <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-
-                </body>
-            </html>
+  </body>
+</html>
