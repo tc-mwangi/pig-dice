@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Greedy Pigs.
 
 ## Description
@@ -54,7 +53,7 @@ Please make sure to update tests as appropriate.
 
 ## Authors
 
-* **Loise Mwangi** - *Initial work* - [greedy pigs](hhttps://github.com/tc-mwangi)
+* **Loise Mwangi** - *Initial work* - [greedy pigs](https://github.com/tc-mwangi/pig-dice)
 
 ## Acknowledgments
 
@@ -64,6 +63,3 @@ Please make sure to update tests as appropriate.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/tc-mwangi/pig-dice/blob/master/LICENSE) file for details
-=======
-# pig-dice
->>>>>>> 656259d16a2ad51374ba56fbb98534dbee2f63ca
