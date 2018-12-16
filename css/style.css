@@ -109,7 +109,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 /* Avatar player-one Image */
    .alt-features-icon img#player-one {
      align: left;
-     width: 500px;
+     width: 1000px;
      height: auto;
    };
 
@@ -117,7 +117,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
  /* Avatar player-two Image */
     .alt-features-icon img#player-two {
       align: right;
-      width: 500px;
+      width: 1000px;
       height: auto;
     };
 
