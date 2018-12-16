@@ -1,32 +1,43 @@
 //1. Test: js file is linked use:
-/*var show = function(){
-  console.log("hi");
-};
-show();
+// $(document).ready(function(){
+// var show = function(){
+//   console.log("hi");
+// };
+// show();
+// });
 /*Status: Linked*/
 
-//2. Enable avatar Selection.
+//---------------------------------------
 
-/*<img id="player-one" src="images/avatar-set-2/png/001-boy.png" alt="player one">
-<select id="changeAvatar" class="form-control input-sm" onchange="changeAvatar();">
-*/
+$(document).ready(function(){
+  //2. Enable avatar Selection.
+  //Player 1
+  var avatarArray1 = [
+    "images/avatar/baby.png",
+    "images/avatar/burglar.png",
+    "images/avatar/clown.png",
+    "images/avatar/detective.png",
+    "images/avatar/santa.png"
+  ];
 
-var avatarArray = [
-  "images/avatar-set-2/png/001-boy.png",
-  "images/avatar-set-2/png/046-man-11.png",
-  "images/avatar-set-2/png/047-woman-7.png",
-  "images/avatar-set-2/png/047-woman-7.png",
-  "images/avatar-set-2/png/043-girl-7.png",
-  "images/avatar-set-2/png/032-burglar.png"
-];
+  $("#changeAvatar1").change(function(){
+    $("#player-one")[0].src = avatarArray1[this.value];
+  })
 
-$("select#changeAvatar").change(function () {
-  $("select#player-one")[0].src = avatarArray[this.value];
+  //Player 2
+  var avatarArray2 = [
+    "images/avatar/blue-hair.png",
+    "images/avatar/headphones.png",
+    "images/avatar/mohawk.png",
+    "images/avatar/old.png",
+    "images/avatar/red-hair.png"
+  ];
+
+  $("#changeAvatar2").change(function(){
+    $("#player-two")[0].src = avatarArray2[this.value];
+  })
+
 });
-
-
-
-
 
 
 
