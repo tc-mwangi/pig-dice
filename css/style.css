@@ -92,8 +92,38 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 
 
 /* ==============================
-   Common styles
+   My Overides
    ============================== */
+
+/* Die Image */
+   img#die-display {
+     align: centered;
+     width: 200px;
+     height: auto;
+   };
+
+/* Avatar player-one Image */
+    img#player-one {
+      align: left;
+      width: 100px;
+      height: auto;
+    };
+
+/* Avatar player-one Image */
+    img#player-two {
+      align: right;
+      width: 100px;
+      height: auto;
+    };
+
+
+
+
+
+
+   /* ==============================
+      Common styles
+      ============================== */
 
 .align-center{ text-align:center !important; }
 .align-left{ text-align:left !important;}
@@ -228,6 +258,12 @@ a:active{
 img:not([draggable]), embed, object, video{
     max-width: 100%;
     height: auto;
+}
+
+img#die-display {
+  align: centered;
+  width: 200px;
+  height: auto;
 }
 
 
