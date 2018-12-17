@@ -61,21 +61,29 @@ $(document).ready(function(){
     console.log(randomNumber);//test for selector
 
     if (randomNumber === 1) {
-      $("#die-display").src = diceArray[0];
+      document.write('<img id="die-display" src="'+diceArray[0]+'" height="200px" width="200px" />');
+      document.text
+      // $("consoleMessage").innerHTML = "You rolled a " + randomNumber + "."
     } else if (randomNumber === 2) {
-      $("#die-display").src = diceArray[1];
+      document.write('<img id="die-display" src="'+diceArray[0]+'" height="200px" width="200px" />');
     } else if (randomNumber === 3) {
-      $("#die-display").src = diceArray[2];
+      document.write('<img id="die-display" src="'+diceArray[0]+'" height="200px" width="200px" />');
     } else if (randomNumber === 4) {
-      $("#die-display").src = diceArray[3];
+      document.write('<img id="die-display" src="'+diceArray[0]+'" height="200px" width="200px" />');
     } else if (randomNumber === 5) {
-      $("#die-display").src = diceArray[4];
+      document.write('<img id="die-display" src="'+diceArray[4]+'" />');
     } else {
-      $("#die-display").src = diceArray[5];
+      document.write('<img id="die-display" src="'+diceArray[0]+'" height="200px" width="200px" />');
     }
   });  //------ closing image counter
 
 });  //------ closing jquery loading
+
+
+// var status = document.getElementById("status");
+// status.innerHTML = "You rolled " + diceTotal + ".";
+// if (diceTotal == 7 || diceTotal == 11) {
+//   status.innerHTML += " You Won!";
 
 
   // $("#roll-button").addEventListener("click", function(){
@@ -108,3 +116,23 @@ $(document).ready(function(){
   //   })
   //
   // }
+
+
+    // var die1 = document.getElementById("die1");
+    //
+    //
+    // function rollDice() {
+    //   var status = document.getElementById("status");
+    //   var d1 = Math.floor(Math.random() * 6);
+    //
+    //   var diceTotal = d1 + d2;
+    //   die1.src = imgArray[d1].src;
+    //   die2.src = imgArray[d2].src;
+    //   status.innerHTML = "You rolled " + diceTotal + ".";
+    //   if (diceTotal == 7 || diceTotal == 11) {
+    //     status.innerHTML += " You Won!";
+    //   } else {
+    //     status.innerHTML = " You Lost!";
+    //   }
+    // }
+    // document.getElementById("roll").onclick = rollDice;
