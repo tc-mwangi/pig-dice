@@ -10,6 +10,8 @@
 //---------------------------------------
 
 $(document).ready(function(){
+
+
   //2. Enable avatar Selection.
   //Player 1
   var avatarArray1 = [
@@ -61,6 +63,7 @@ $(document).ready(function(){
     console.log(randomNumber);//test for selector
 
     if (randomNumber === 1) {
+      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
       $("#insertImage").prepend('<img id="die-1" src="'+diceArray[0]+'" height="200px" width="200px" />');
       document.text
       // $("consoleMessage").innerHTML = "You rolled a " + randomNumber + "."

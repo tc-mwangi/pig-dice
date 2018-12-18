@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Pig &mdash; Jeopardy Dice Game</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta name="author" content="pig dice">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/die/logo.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS -->
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/objectives.js"></script>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <div class="container" id="top">
+
+
+
+  </div>
+
+  <div class="jumbotron">
+    <div class="align-center">
+      <nav class="navbar sticky-top navbar-light bg-light">
+        <a href="#top" class="logo">
+          <img id="logo-nav" src="images/die/logo.png" alt="logo">
+        </a>
+        <a class="navbar-brand" id="logo-text" href="#top"></a>
+      </nav>
+      <h2>PIG DICE</h2>
+      <h5>INSTRUCTIONS</h5>
+      <p>The first player rolls the die. If he rolls as 2, 3, 4, 5, or 6, the score is added to the total.
+
+If he did not roll a 1, the player can decide to roll again. If he again rolls a 2, 3, 4, 5, or 6, he adds that number to his previous score. If he rolls a 1, he earns no score and immediately passes the die to the next player.</p>
+    </div>
+  </div>
+
+
+
+  <!-- AVATARS -->
+
+  <div class="row">
+
+    <div class="col-md-6 rounded float-left">
+
+    <!-- PLAYER ONE SECTION -->
+    <h2>Player One Avatar</h2>
+    <select id="changeAvatar1" class="form-control" placeholder="Select avatar">
+      <option value="0">baby</option>
+      <option value="1">burglar</option>
+      <option value="2">clown</option>
+      <option value="3">detective</option>
+      <option value="4">santa</option>
+    </select>
+    <div class="col-md-6 rounded float-left" id="icons">
+      <img id="player-one" class="thumbnail img-responsive" src="images/avatar/santa.png" width="300" height="300"alt="icon">
+
+      <!-- Name Placeholder -->
+      <input class="form-control form-control-lg" type="text" placeholder="your name here">
+
+      <!-- Player One Total -->
+      <div id="total1"class="form-control">Player One Total</div>
+      </div>
+    </div>
+      <!-- END PLAYER ONE SECTION -->
+
+
+    <!-- PLAYER TWO SECTION -->
+    <div class="col-md-6 rounded float-left">
+
+
+    <h2>Player Two Avatar</h2>
+    <select id="changeAvatar2" class="form-control" placeholder="Select avatar">
+      <option value="0">baby</option>
+      <option value="1">burglar</option>
+      <option value="2">clown</option>
+      <option value="3">detective</option>
+      <option value="4">santa</option>
+    </select>
+    <div class="col-md-6 rounded float-left" id="icons">
+      <img id="player-two" class="thumbnail img-responsive" src="images/avatar/santa.png" width="300" height="300"alt="icon">
+
+      <!-- Name Placeholder -->
+      <input class="form-control form-control-lg" type="text" placeholder="your name here">
+
+      <!-- Player One Total -->
+      <div id="total2"class="form-control">Player Two Total</div>
+
+      <!-- ROLL DICE -->
+      <div class="align-center">
+        <button id="roll-button" type="button" class="btn btn-outline-danger btn btn-danger btn-lg btn-block">Roll Dice</button>
+      </div>
+      <!-- ROLL DICE -->
+      <br>
+
+      <!-- HOLD -->
+      <div class="align-center">
+        <button id="hold-button" type="button" class="btn btn-outline-warning btn btn-warning btn-lg btn-block">Hold</button>
+      </div>
+      <!-- HOLD -->
+      </div>
+    </div>
+
+    <!-- END PLAYER TWO SECTION -->
+
+  </div>
+    <br>
+
+  <!-- PLAYER ONE CONSOLE SECTION -->
+  <section id="console">
+
+
+    <div class="jumbotron">
+
+      <!-- ROUND SCORE DISPLAY-->
+      <div id="roundScore" class="form-control form-control-lg"> round score here
+      </div>
+
+
+      <!-- ROUND SCORE DISPLAY-->
+
+      <!-- ROLL DICE -->
+
+
+      <!-- CONSOLE MESSAGE DISPLAY-->
+      <div id="console-message" class="alert alert-warning" role="alert">
+
+      </div>
+      <!-- CONSOLE MESSAGE DISPLAY-->
+
+      <!-- DIE IMAGE DISPLAY-->
+      <div id="show-image" class="alt-features-icon align-left">
+        <img id="insertImage" src="images/die/1.png" width="200" height="200" alt="icon" alt="dice image">
+      </div>
+      <!-- DIE IMAGE DISPLAY-->
+
+  </section>
+
+  <!-- END PLAYESR ONE CONSOLE SECTION -->
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
