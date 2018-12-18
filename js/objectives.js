@@ -65,14 +65,19 @@ $(document).ready(function(){
       document.text
       // $("consoleMessage").innerHTML = "You rolled a " + randomNumber + "."
     } else if (randomNumber === 2) {
+      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
       $("#insertImage").prepend('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
     } else if (randomNumber === 3) {
+      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
       $("#insertImage").prepend('<img id="die-3" src="'+diceArray[2]+'" height="200px" width="200px" />');
     } else if (randomNumber === 4) {
+      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
       $("#insertImage").prepend('<img id="die-4" src="'+diceArray[3]+'" height="200px" width="200px" />');
     } else if (randomNumber === 5) {
+      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
       $("#insertImage").prepend('<img id="die-5" src="'+diceArray[4]+'" />');
     } else {
+      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
       $("#insertImage").prepend('<img id="die-6" src="'+diceArray[5]+'" height="200px" width="200px" />');
     }
   });  //------ closing image counter
