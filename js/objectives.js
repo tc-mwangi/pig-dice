@@ -10,8 +10,6 @@
 //---------------------------------------
 
 $(document).ready(function(){
-
-
   //2. Enable avatar Selection.
   //Player 1
   var avatarArray1 = [
@@ -63,26 +61,46 @@ $(document).ready(function(){
     console.log(randomNumber);//test for selector
 
     if (randomNumber === 1) {
-      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
-      $("#insertImage").prepend('<img id="die-1" src="'+diceArray[0]+'" height="200px" width="200px" />');
-      document.text
-      // $("consoleMessage").innerHTML = "You rolled a " + randomNumber + "."
+      $("div#currentScore1").text("You have rolled a 1")
+      $("img.diceHolder").src = diceArray[0];
     } else if (randomNumber === 2) {
-      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
-      $("#insertImage").prepend('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+      $("div#currentScore1").text("You have rolled a 2")
+      $("img.diceHolder").src = diceArray[1];
     } else if (randomNumber === 3) {
-      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
-      $("#insertImage").prepend('<img id="die-3" src="'+diceArray[2]+'" height="200px" width="200px" />');
+      $("div#currentScore1").text("You have rolled a 3")
+      $("img.diceHolder").src = diceArray[2];
     } else if (randomNumber === 4) {
-      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
-      $("#insertImage").prepend('<img id="die-4" src="'+diceArray[3]+'" height="200px" width="200px" />');
+      $("div#currentScore1").text("You have rolled a 4")
+      $("img.diceHolder").src = diceArray[3];
     } else if (randomNumber === 5) {
-      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
-      $("#insertImage").prepend('<img id="die-5" src="'+diceArray[4]+'" />');
+      $("div#currentScore1").text("You have rolled a 5")
+      $("img.diceHolder").src = diceArray[4];
     } else {
-      $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
-      $("#insertImage").prepend('<img id="die-6" src="'+diceArray[5]+'" height="200px" width="200px" />');
-    }
+      $("div#currentScore1").text("You have rolled a 6")
+      $("img.diceHolder").src = diceArray[5];
+    };
+
+    // if (randomNumber === 1) {
+    //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    //   $("#insertImage").prepend('<img id="die-1" src="'+diceArray[0]+'" height="200px" width="200px" />');
+    //   document.text
+    //   // $("consoleMessage").innerHTML = "You rolled a " + randomNumber + "."
+    // } else if (randomNumber === 2) {
+    //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    //   $("#insertImage").prepend('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    // } else if (randomNumber === 3) {
+    //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    //   $("#insertImage").prepend('<img id="die-3" src="'+diceArray[2]+'" height="200px" width="200px" />');
+    // } else if (randomNumber === 4) {
+    //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    //   $("#insertImage").prepend('<img id="die-4" src="'+diceArray[3]+'" height="200px" width="200px" />');
+    // } else if (randomNumber === 5) {
+    //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    //   $("#insertImage").prepend('<img id="die-5" src="'+diceArray[4]+'" />');
+    // } else {
+    //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
+    //   $("#insertImage").prepend('<img id="die-6" src="'+diceArray[5]+'" height="200px" width="200px" />');
+    // }
   });  //------ closing image counter
 
 });  //------ closing jquery loading

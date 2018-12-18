@@ -24,29 +24,34 @@
 
 <body>
 
-  <!-- NAVIGATION BAR -->
-  <div class="container" id="top">
 
+  <!-- Navigation Bar -->
 
-
-  </div>
+  <!-- End Navigation Bar -->
 
   <div class="jumbotron">
-    <div class="align-center">
-      <nav class="navbar sticky-top navbar-light bg-light">
-        <a href="#top" class="logo">
-          <img id="logo-nav" src="images/die/logo.png" alt="logo">
-        </a>
-        <a class="navbar-brand" id="logo-text" href="#top"></a>
-      </nav>
-      <h2>PIG DICE</h2>
-      <h5>INSTRUCTIONS</h5>
-      <p>The first player rolls the die. If he rolls as 2, 3, 4, 5, or 6, the score is added to the total.
+            <div class="align-center">
+              <h2>Pig Dice</h2>
 
-If he did not roll a 1, the player can decide to roll again. If he again rolls a 2, 3, 4, 5, or 6, he adds that number to his previous score. If he rolls a 1, he earns no score and immediately passes the die to the next player.</p>
-    </div>
+              <br>
+              <br>
+              <a href="#top" class="logo">
+                <img id="logo-nav" src="images/die/logo.png" alt="logo" height=100px width="100px" >
+                <br>
+                <br>
+                <!-- <p>Be the 1st to reach 100 points. -->
+                  <!-- GAMEPLAY
+ON A TURN, A PLAYER ROLLS THE DIE REPEATEDLY UNTIL EITHER:
+
+1 IS ROLLED
+THE PLAYER CHOOSES TO HOLD (STOP ROLLING)
+
+IF THE PLAYER CHOOSES TO HOLD, ALL OF THE POINTS ROLLED DURING THAT TURN ARE ADDED TO HIS OR HER SCORE. -->
+                </p>
+              </a>
+              <h3></h3>
+            </div>
   </div>
-
 
 
   <!-- AVATARS -->
@@ -79,7 +84,37 @@ If he did not roll a 1, the player can decide to roll again. If he again rolls a
       <br>
 
       <!-- Player One Total -->
-      <div id="total1"class="form-control">Player One Total</div>
+      <div id="totalOne"class="form-control">Player One Total</div>
+
+      <br>
+      <br>
+
+      <!-- ROLL DICE -->
+      <div class="align-center">
+        <button id="roll-button" type="button" class="btn btn-outline-danger btn btn-danger btn-lg btn-block">Roll Dice</button>
+      </div>
+      <br>
+      <br>
+      <!-- ROLL DICE -->
+      	<div id="currentScore1" class="alert alert-warning"></div>
+
+      <br>
+
+
+      <!-- HOLD -->
+      <div class="align-center">
+        <button id="hold-button" type="button" class="btn btn-outline-warning btn btn-warning btn-lg btn-block">Hold</button>
+      </div>
+      <!-- HOLD -->
+
+      <br>
+      <br>
+      <br>
+      <!-- DIE IMAGE DISPLAY-->
+      <div id="show-image" class="alt-features-icon align-left">
+        <img class="diceHolder" id="insertImage" src="images/die/1.png" width="180" height="180" alt="icon" alt="dice image">
+      </div>
+      <!-- DIE IMAGE DISPLAY-->
       </div>
     </div>
       <!-- END PLAYER ONE SECTION -->
@@ -116,6 +151,9 @@ If he did not roll a 1, the player can decide to roll again. If he again rolls a
       <!-- Player One Total -->
       <div id="total2"class="form-control">Player Two Total</div>
 
+      <br>
+      <br>
+
       <!-- ROLL DICE -->
       <div class="align-center">
         <button id="roll-button" type="button" class="btn btn-outline-danger btn btn-danger btn-lg btn-block">Roll Dice</button>
@@ -129,13 +167,22 @@ If he did not roll a 1, the player can decide to roll again. If he again rolls a
         <button id="hold-button" type="button" class="btn btn-outline-warning btn btn-warning btn-lg btn-block">Hold</button>
       </div>
       <!-- HOLD -->
+
+      <br>
+      <br>
+      <br>
+      <!-- DIE IMAGE DISPLAY-->
+      <div id="show-image" class="alt-features-icon align-left">
+        <img id="insertImage" src="images/die/1.png" width="180" height="180" alt="icon" alt="dice image">
+      </div>
+      <!-- DIE IMAGE DISPLAY-->
       </div>
     </div>
 
     <!-- END PLAYER TWO SECTION -->
 
   </div>
-  
+
     <br>
 
   <!-- PLAYER ONE CONSOLE SECTION -->
@@ -144,37 +191,15 @@ If he did not roll a 1, the player can decide to roll again. If he again rolls a
 
     <div class="jumbotron">
 
-      <!-- ROUND SCORE DISPLAY-->
-      <div id="roundScore" class="form-control form-control-lg"> round score here
-      </div>
-
-
-      <!-- ROUND SCORE DISPLAY-->
-
-      <!-- ROLL DICE -->
-
-
       <!-- CONSOLE MESSAGE DISPLAY-->
       <div id="console-message" class="alert alert-warning" role="alert">
 
       </div>
       <!-- CONSOLE MESSAGE DISPLAY-->
 
-      <!-- DIE IMAGE DISPLAY-->
-      <div id="show-image" class="alt-features-icon align-left">
-        <img id="insertImage" src="images/die/1.png" width="200" height="200" alt="icon" alt="dice image">
-      </div>
-      <!-- DIE IMAGE DISPLAY-->
-
   </section>
 
-  <!-- END PLAYESR ONE CONSOLE SECTION -->
-
-
-
-
-
-
+  <!-- END PLAYER ONE CONSOLE SECTION -->
 
 
 
