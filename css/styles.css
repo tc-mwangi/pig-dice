@@ -1,0 +1,27 @@
+/*General Styles */
+/* Fonts */
+@import "font-awesome.min.css";
+
+/* Navigation Bar */
+#logo-nav {
+  align-content: flex-end;
+  height: 50px;
+  width: 50px;
+};
+
+#logo-text{
+  position: sticky;
+};
+
+/* User Icons */
+img #user-icons {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+};
+
+div #currentScore1 {
+  height: 500px;
+  width: 500px;
+  align-content: stretch;
+}

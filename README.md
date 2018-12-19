@@ -7,11 +7,8 @@
 
 ### Homepage
 
-![Image]()
+![Image](images/screencapture-file-Users-WanjiruMwangi-Desktop-pig-dice-game-html-2018-12-19-05_47_04.png)
 
-### Game Console
-
-![Image]()
 
 ## Live Site
 

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pig &mdash; Jeopardy Dice Game</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta charset="utf-8">
+  <meta name="author" content="pig dice">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/die/logo.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- JS -->
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+  <script type="text/javascript" src="js/objectives.js"></script>
+
+
+
+  <script type="text/javascript" src="js/all.js"></script>
+
+
+</head>
+
+
+<body class="appear-animate">
+
+  <!-- Load Page -->
+
+  <!-- End Loader -->
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+    <!-- Begin Avatar Section -->
+    <section id="gameplay" class="page-section">
+      <div class="container relative">
+
+        <!-- Players -->
+        <div class="row">
+
+
+          <div class="col-sm-6 mb-40">
+
+            <!-- Player One Select Avatar -->
+            <h2 class="section-title font-alt mb-70 mb-sm-40">
+              <h1>PIG DICE</h1>
+              Select Avatar
+            </h2>
+            <div class="mb-20 mb-md-10">
+              <select id="changeAvatar1" class="form-control input-sm" placeholder="Select avatar">
+                <option value="0">baby</option>
+                <option value="1">burglar</option>
+                <option value="2">clown</option>
+                <option value="3">detective</option>
+                <option value="4">santa</option>
+              </select>
+            </div>
+
+            <div class="row multi-columns-row alt-features-grid">
+
+              <!-- Player One Image-->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item align-left">
+                  <div class="alt-features-icon">
+                    <img id="player-one" src="images/avatar/baby.png" alt="player one">
+                  </div>
+                  <h3 class="alt-features-title font-alt">Player One</h3>
+                  <div class="alt-features-descr align-left">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Player One Score Counter -->
+            <div class="mb-20 mb-md-10 align-right">
+              <p id="consoleMessage"></p>
+              <!-- <input type="number" name="number" id="scoreCounterOne" class="input-md form-control" placeholder="Score" max="100"> -->
+            </div>
+            <!-- End Player One -->
+
+          </div>
+
+
+
+
+          <div class="col-sm-6 mb-40">
+
+            <!-- Player Two Select Avatar -->
+
+            <h2 class="section-title font-alt mb-70 mb-sm-40">
+              Select Avatar
+            </h2>
+            <div class="mb-20 mb-md-10">
+              <select id="changeAvatar2" class="form-control input-sm">
+                <option value="0">blue</option>
+                <option value="1">headphones</option>
+                <option value="2">mohawk</option>
+                <option value="3">old</option>
+                <option value="4">red</option>
+              </select>
+            </div>
+
+
+
+            <div class="row multi-columns-row alt-features-grid">
+
+              <!-- Player Two Image-->
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item align-left">
+                  <div class="alt-features-icon">
+                    <img id="player-two" src="images/avatar/blue-hair.png" alt="player two">
+                  </div>
+                  <h3 class="alt-features-title font-alt">Player Two</h3>
+                  <div class="alt-features-descr align-left">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Player Two Score Counter -->
+              <div class="mb-20 mb-md-10 align-left">
+                <input type="number" name="number" id="scoreCounterTwo" class="input-md form-control" placeholder="Score" max="100">
+              </div>
+
+            </div>
+            <div id="outputImage"></div>
+          </div>
+
+          <!-- Roll Dice Show image-->
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="alt-features-item align-center">
+              <div id="insertImage" class="alt-features-icon align-left">
+                <img id="die-display" src="images/die/1.png" alt="dice image">
+              </div>
+              <h3 class="alt-features-title font-alt">Dice</h3>
+              <div class="alt-features-descr align-left">
+              </div>
+            </div>
+          </div>
+          <!-- Roll Dice-->
+
+
+        </div>
+        <!-- End Player One -->
+
+      </div>
+      <!-- End Avatar Grid -->
+
+  </div>
+  </section>
+  <!-- End Features Section -->
+
+  <!-- Divider -->
+  <hr class="mt-0 mb-0 " />
+  <!-- End Divider -->
+
+  <!-- Objectives Section ------------------------------->
+  <section class="small-section bg-dark">
+
+    <div id="console-bar" class="container relative">
+
+
+      <!-- Begin Console Bar----------------------->
+
+      <!-- Roll Dice Button --->
+      <div class="align-center">
+        <h3 class="banner-heading font-alt">CONSOLE</h3>
+
+        <div>
+
+
+
+        </div>
+
+      </div>
+      <!-- End ofRoll Dice Button --->
+
+      <!-- Hold Button --->
+      <div class="align-center">
+        <h3 class="banner-heading font-alt"></h3>
+        <div>
+          <a id="roll" href="" class="btn btn-mod btn-w btn-medium btn-round">Hold</a>
+        </div>
+      </div>
+      <!-- End of Hold Button --->
+
+
+      <!-- Jackpot Button--->
+      <div class="align-center">
+        <h3 class="banner-heading font-alt">Jackpot</h3>
+        <div>
+          <a id="jack-pot" href="" class="btn btn-mod btn-w btn-medium btn-round">100</a>
+        </div>
+      </div>
+      <!-- End Jackpot Button--->
+
+      <!-- New Game Button --->
+      <div class="align-center">
+        <h3 class="banner-heading font-alt"></h3>
+        <div>
+          <a id="new-game" href="" class="btn btn-mod btn-w btn-medium btn-round">New Game</a>
+        </div>
+      </div>
+      <!-- End New Game Button --->
+      <!-- End Console Bar--->
+
+    </div>
+  </section>
+  <!-- End of Objectives Section ------------------------->
+</body>
+
+</html>
