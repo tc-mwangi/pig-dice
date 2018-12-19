@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   $("#changeAvatar2").change(function(){
     $("#player-two")[0].src = avatarArray2[this.value];
-  })
+  });
 
 
 //IP Objectives-------------------------
@@ -63,26 +63,47 @@ $(document).ready(function(){
   ];
 
     if (diceNumber === 1) {
-      $("div#currentScore1").text("You have rolled a 1");
+      $("div#currentScore1").text(diceNumber);
         $(".insertImage1").src = ("dicFaces[0]");
     } else if (diceNumber === 2) {
-      $("div#currentScore1").text("You have rolled a 2")
+      $("div#currentScore1").text(diceNumber)
         $(".insertImage1").src = "images/die/2.png";
     } else if (diceNumber === 3) {
-      $("div#currentScore1").text("You have rolled a 3")
+      $("div#currentScore1").text(diceNumber)
         $(".insertImage1").src = "images/die/3.png";
     } else if (diceNumber === 4) {
-      $("div#currentScore1").text("You have rolled a 4")
+      $("div#currentScore1").text(diceNumber)
         $(".insertImage1").src = "images/die/4.png";
     } else if (diceNumber === 5) {
-      $("div#currentScore1").text("You have rolled a 5")
+      $("div#currentScore1").text(diceNumber)
         $(".insertImage1").src = "images/die/5.png";
     } else {
-      $("div#currentScore1").text("You have rolled a 5")
+      $("div#currentScore1").text(diceNumber)
         $(".insertImage1").src = "images/die/6.png";
     };
 
-  });  //------ // END PLAYER 1 CONTROLS
+  });
+$("#hold-button").click(function(){
+
+
+  var res1 = parseInt($('#currentScore1').text());
+  var res2 = parseInt($('#totalOne').text());
+  var res3 = add(res1,res2);
+  $('#totalOne').text(res3);
+  cleaDiceRol();
+
+
+});
+
+function cleaDiceRol(){
+  $('#currentScore1').text(0);
+};
+
+function add(num0,num1){
+  var result = num0+num1;
+  return result;
+};
+   //------ // END PLAYER 1 CONTROLS
 
   // PLAYER 2 CONTROLS
     $("#roll-button2").click(function(){
@@ -120,6 +141,7 @@ $(document).ready(function(){
 
     });  //------ // END PLAYER 1 CONTROLS
 
+hold-button
 
 });  //------ closing jquery loading
 
