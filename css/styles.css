@@ -19,3 +19,9 @@ img #user-icons {
   width: 100px;
   height: 100px;
 };
+
+div #currentScore1 {
+  height: 500px;
+  width: 500px;
+  align-content: stretch;
+}

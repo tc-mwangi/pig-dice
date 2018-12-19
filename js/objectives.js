@@ -47,39 +47,84 @@ $(document).ready(function(){
 // <a id="roll-button" class="btn btn-mod btn-w btn-medium btn-round ">Roll Dice</a>
 //<p id="consoleMessage"></p>
 
-  //Array of dice images 1-6
-  var diceArray = [
-  "images/die/1.png", //diceArray[0]
-  "images/die/2.png", //diceArray[1]
-  "images/die/3.png", //diceArray[2]
-  "images/die/4.png", //diceArray[3]
-  "images/die/5.png", //diceArray[4]
-  "images/die/6.png"]; //diceArray[5]
 
-  $("#roll-button").click(function(){
-    var randomNumber = Math.floor(Math.random() * (diceArray.length)) + 1;
-    console.log(randomNumber);//test for selector
+// PLAYER 1 CONTROLS
+  $("#roll-button1").click(function(){
+    var diceNumber = Math.floor(Math.random() * 6) + 1;
+    console.log(diceNumber);//test roll button selector
 
-    if (randomNumber === 1) {
-      $("div#currentScore1").text("You have rolled a 1")
-      $("img.diceHolder").src = diceArray[0];
-    } else if (randomNumber === 2) {
+    var diceFaces = [
+    "images/die/1.png", //dicFaces[0]
+    "images/die/2.png", //diceFaces[1]
+    "images/die/3.png", //diceFaces[2]
+    "images/die/4.png", //diceFaces[3]
+    "images/die/5.png", //diceFaces[4]
+    "images/die/6.png"  //diceFaces[4]
+  ];
+
+    if (diceNumber === 1) {
+      $("div#currentScore1").text("You have rolled a 1");
+        $(".insertImage1").src = ("dicFaces[0]");
+    } else if (diceNumber === 2) {
       $("div#currentScore1").text("You have rolled a 2")
-      $("img.diceHolder").src = diceArray[1];
-    } else if (randomNumber === 3) {
+        $(".insertImage1").src = "images/die/2.png";
+    } else if (diceNumber === 3) {
       $("div#currentScore1").text("You have rolled a 3")
-      $("img.diceHolder").src = diceArray[2];
-    } else if (randomNumber === 4) {
+        $(".insertImage1").src = "images/die/3.png";
+    } else if (diceNumber === 4) {
       $("div#currentScore1").text("You have rolled a 4")
-      $("img.diceHolder").src = diceArray[3];
-    } else if (randomNumber === 5) {
+        $(".insertImage1").src = "images/die/4.png";
+    } else if (diceNumber === 5) {
       $("div#currentScore1").text("You have rolled a 5")
-      $("img.diceHolder").src = diceArray[4];
+        $(".insertImage1").src = "images/die/5.png";
     } else {
-      $("div#currentScore1").text("You have rolled a 6")
-      $("img.diceHolder").src = diceArray[5];
+      $("div#currentScore1").text("You have rolled a 5")
+        $(".insertImage1").src = "images/die/6.png";
     };
 
+  });  //------ // END PLAYER 1 CONTROLS
+
+  // PLAYER 2 CONTROLS
+    $("#roll-button2").click(function(){
+      var diceNumber = Math.floor(Math.random() * 6) + 1;
+      console.log(diceNumber);//test roll button selector
+
+      var diceFaces = [
+      "images/die/1.png", //dicFaces[0]
+      "images/die/2.png", //diceFaces[1]
+      "images/die/3.png", //diceFaces[2]
+      "images/die/4.png", //diceFaces[3]
+      "images/die/5.png", //diceFaces[4]
+      "images/die/6.png"  //diceFaces[4]
+    ];
+
+      if (diceNumber === 1) {
+        $("div#currentScore2").text("You have rolled a 1");
+          $(".insertImage2").src = "images/die/1.png";
+      } else if (diceNumber === 2) {
+        $("div#currentScore2").text("You have rolled a 2")
+          $(".insertImage2").src = "images/die/2.png";
+      } else if (diceNumber === 3) {
+        $("div#currentScore2").text("You have rolled a 3")
+          $(".insertImage2").src = "images/die/3.png";
+      } else if (diceNumber === 4) {
+        $("div#currentScore2").text("You have rolled a 4")
+          $(".insertImage2").src = "images/die/4.png";
+      } else if (diceNumber === 5) {
+        $("div#currentScore2").text("You have rolled a 5")
+          $(".insertImage2").src = "images/die/5.png";
+      } else {
+        $("div#currentScore2").text("You have rolled a 5")
+          $(".insertImage2").src = "images/die/6.png";
+      };
+
+    });  //------ // END PLAYER 1 CONTROLS
+
+
+});  //------ closing jquery loading
+
+
+// $("#insertImage1").src = diceFaces[diceFace];
     // if (randomNumber === 1) {
     //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
     //   $("#insertImage").prepend('<img id="die-1" src="'+diceArray[0]+'" height="200px" width="200px" />');
@@ -101,64 +146,10 @@ $(document).ready(function(){
     //   $("#insertImage").hide('<img id="die-2" src="'+diceArray[1]+'" height="200px" width="200px" />');
     //   $("#insertImage").prepend('<img id="die-6" src="'+diceArray[5]+'" height="200px" width="200px" />');
     // }
-  });  //------ closing image counter
 
-});  //------ closing jquery loading
 
 
 // var status = document.getElementById("status");
 // status.innerHTML = "You rolled " + diceTotal + ".";
 // if (diceTotal == 7 || diceTotal == 11) {
 //   status.innerHTML += " You Won!";
-
-
-  // $("#roll-button").addEventListener("click", function(){
-  //   rollDice();
-  // });
-  //
-  // $("#roll-button").change(function(){
-  //   $("#die-display").src = diceArray[this.value];
-  // })
-
-
-
-  // function rollDice() {
-  // //   //generate random number- Math.floor()  - Pass Math.random as an argument.
-  // //
-
-
-
-  // document.getElementById("scoreCounterOne").innerHTML = randomNumber
-  // alert("You rolled "+randomNumber);
-  //function to change dice number and image display
-  // function rollDice(){
-  //   $("#roll-button").click(function(){
-  //     $("#changeAvatar2").change(function(){
-  //       $("#die-display")[0].src = diceArray[this.value];
-  //     })
-  //
-  //
-  //
-  //   })
-  //
-  // }
-
-
-    // var die1 = document.getElementById("die1");
-    //
-    //
-    // function rollDice() {
-    //   var status = document.getElementById("status");
-    //   var d1 = Math.floor(Math.random() * 6);
-    //
-    //   var diceTotal = d1 + d2;
-    //   die1.src = imgArray[d1].src;
-    //   die2.src = imgArray[d2].src;
-    //   status.innerHTML = "You rolled " + diceTotal + ".";
-    //   if (diceTotal == 7 || diceTotal == 11) {
-    //     status.innerHTML += " You Won!";
-    //   } else {
-    //     status.innerHTML = " You Lost!";
-    //   }
-    // }
-    // document.getElementById("roll").onclick = rollDice;
